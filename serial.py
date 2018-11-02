@@ -1,6 +1,6 @@
 import time
-#import serial
-from serial import Serial
+import serial
+#from serial import Serial
 
 # configure the serial connections (the parameters differs on the device you are connecting to)
 ser = serial.Serial(
@@ -17,7 +17,7 @@ ser.isOpen()
 print('Enter your commands below.\r\nInsert "exit" to leave the application.')
 
 input = 1
-while 1 :
+while(1):
 	# get keyboard input
 	input = raw_input(">> ")
 	if(input == 'exit'):
