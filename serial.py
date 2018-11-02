@@ -1,5 +1,6 @@
 import time
-import serial
+#import serial
+from serial import Serial
 
 # configure the serial connections (the parameters differs on the device you are connecting to)
 ser = serial.Serial(
@@ -33,4 +34,4 @@ while 1 :
 			out += ser.read(1)
 
 		if(out != ''):
-			print ">>" + out
+			print(">>" + out)
